@@ -23,7 +23,7 @@ useHead({
 })
 </script>
 <template>
-    <div class="font-cairo text-primary">
+    <div class="font-cairo text-primary bg-background">
         <div class="section">
             <HomepageHero />
         </div>

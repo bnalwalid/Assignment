@@ -5,7 +5,7 @@ import CountUp from 'vue-countup-v3'
 
 </script>
 <template>
-    <div class="font-cairo text-primary relative my-64">
+    <div class="font-cairo text-primary relative my-32">
         <div
             class="rounded-full border-3888 opacity-100 z-0 bg-radial-gradientBrawn w-6/12 h-screen absolute -right-96 -top-32 ">
         </div>

@@ -40,7 +40,7 @@ const getDateFormatted = (date) => {
         </div>
 
         <!-- Visit our blog -->
-        <div class="text-center text-white text-5xl font-bold mt-12 mb-12">
+        <div class="text-center text-white text-5xl font-bold mt-12 mb-12 z-50">
             <nuxt-link to="#blog"
                 class="text-white text-sm font-normal text-center border-2 border-white rounded-full px-12 py-2 hover:bg-white hover:text-primary transition-all duration-300">
                 Visit our blog

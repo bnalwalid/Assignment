@@ -30,7 +30,7 @@ import menu from '~/content/menu.json'
                 </a>
 
             </div>
-            <div class="text-white text-xs mt-4 opacity-60 mb-4">© 2024 Mawdoo3.com. All Rights Reserved.</div>
+            <div class="text-white text-xs mt-4 opacity-60 mb-4">All right reserved  -  © Mawdoo3 {{ new Date().getFullYear() }}</div>
         </div>
     </footer>
 </template>

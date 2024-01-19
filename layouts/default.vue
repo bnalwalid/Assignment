@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font-cairo text-primary bg-background">
     <LayoutsAppHeader />
     <LayoutPageContent>
       <slot />
