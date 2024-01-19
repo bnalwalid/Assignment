@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+// import cairo font from google fonts
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+
+@layer utilities {
+  .border-3888 {
+    border-radius: 3888px;
+  }
+
+  .opacity-65 {
+    opacity: 0.45;
+  }
+
+  .bg-radial-gradientGreen {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #94e197 0%,
+      rgba(6, 14, 32, 0) 100%
+    );
+  }
+  .bg-radial-gradientBlue {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #1258e1 0%,
+      rgba(6, 14, 32, 0) 100%
+    );
+  }
+  .bg-radial-gradientBrawn {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #795624 0%,
+      rgba(6, 14, 32, 0) 100%
+    );
+  }
+  //
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
+header,
+.newsletter {
+  direction: rtl;
+  @apply font-cairo;
+}
