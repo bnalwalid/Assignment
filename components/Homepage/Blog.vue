@@ -20,7 +20,7 @@ const getDateFormatted = (date) => {
             Read About
         </div>
 
-        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center relative z-50">
             <div v-for="(item, index) in blog" :key="item.name"
                 class="flex flex-col items-center justify-center w-full sm:w-1/3 relative bg-[#ffffff37] rounded-xl mr-auto sm:mr-6 mb-6 sb:mr-auto pb-6 shadow-sm  hover:scale-105 transition-all duration-300">
                 <img :src="item.image" :alt="item.name"
