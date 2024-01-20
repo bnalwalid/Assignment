@@ -1,14 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-// import cairo font from google fonts
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
 
 @layer utilities {
   .border-3888 {
     border-radius: 3888px;
   }
-
   .opacity-65 {
     opacity: 0.45;
   }
@@ -34,7 +32,9 @@
       rgba(6, 14, 32, 0) 100%
     );
   }
-  //
+  .ltr {
+    direction: ltr;
+  }
 }
 
 html,
@@ -59,4 +59,50 @@ header,
 .newsletter {
   direction: rtl;
   @apply font-cairo;
+}
+
+// checkbox
+input[type='checkbox'] {
+  background-image: url('/assets/images/border.webp');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 20px;
+  height: 22px;
+  margin: 0 10px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: none;
+  &:checked {
+    background-image: url('/assets/images/inner.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    width: 20px;
+    height: 22px;
+    margin: 0 10px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+
+    //animation when checked
+    animation: check 0.5s ease-in-out forwards;
+  }
+
+  @keyframes check {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 }

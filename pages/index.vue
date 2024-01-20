@@ -3,8 +3,8 @@ useHead({
     title: 'Mawdoo3.com',
     meta: [
         { name: 'description', content: 'Mawdoo3.com' },
-        { name: 'keywords', content: 'Mawdoo3.com' },
-        { name: 'author', content: 'Mawdoo3.com' },
+        { name: 'keywords', content: 'Mawdoo3,com' },
+        { name: 'author', content: 'Mawdoo3' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
         //facebook meta tags
         { property: 'og:title', content: 'Mawdoo3.com' },
@@ -24,6 +24,7 @@ useHead({
 </script>
 <template>
     <div class="font-cairo text-primary bg-background">
+        <TwSizeIndicator />
         <div class="section">
             <HomepageHero />
         </div>
@@ -38,6 +39,9 @@ useHead({
         </div>
         <div class="section">
             <HomepageNewsletter />
+        </div>
+        <div class="section">
+            <HomepageExtra />
         </div>
     </div>
 </template>

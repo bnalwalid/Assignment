@@ -13,7 +13,7 @@ const getDateFormatted = (date) => {
 <template>
     <div class="font-cairo text-primary relative my-64">
         <div
-            class="rounded-full border-3888 opacity-60 z-0 bg-radial-gradientGreen w-full h-screen absolute left-0 right-0 -top-48 bottom-0 mx-auto">
+            class="rounded-full border-3888 opacity-60 z-10 bg-radial-gradientGreen w-full h-screen absolute left-0 right-0 -top-48 bottom-0 mx-auto">
         </div>
 
         <div class="text-center text-white text-5xl font-bold mt-32 mb-12 z-20">
@@ -40,9 +40,9 @@ const getDateFormatted = (date) => {
         </div>
 
         <!-- Visit our blog -->
-        <div class="text-center text-white text-5xl font-bold mt-12 mb-12 z-50">
+        <div class="text-center text-white text-5xl font-bold mt-12 mb-12 z-50 cursor-pointer relative">
             <nuxt-link to="#blog"
-                class="text-white text-sm font-normal text-center border-2 border-white rounded-full px-12 py-2 hover:bg-white hover:text-primary transition-all duration-300">
+                class="text-white text-sm font-normal text-center border-2 border-white rounded-full px-12 py-2 hover:bg-white hover:text-black transition-all duration-300">
                 Visit our blog
             </nuxt-link>
         </div>

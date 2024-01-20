@@ -29,14 +29,14 @@ const toggleMenu = () => {
             </div>
             <!-- menu -->
             <div
-                :class="'flex flex-wrap justify-between items-start mx-auto my-4 border-t border-b border-[#9CA3AF] py-4 bg-[#000000ba] sm:bg-transparent'
+                :class="'flex flex-wrap justify-between items-start mx-auto my-4 border-t border-b border-[#9CA3AF] py-4 bg-[#000000e4] sm:bg-transparent'
                     +
                     (isMenuOpen ? ' visible opacity-100' : ' invisible opacity-0 sm:visible sm:opacity-100 ') + ' transition-all duration-300'">
 
-                <ul class=" flex flex-wrap flex-col justify-between items-start sm:flex-row w-full">
+                <ul class=" flex flex-wrap flex-col justify-between items-center sm:items-start sm:flex-row w-full">
                     <li class="mx-4 sm:mx-1 md:mx-1 lg:mx-4 relative" v-for="item in menu.header" :key="item.name">
                         <nuxt-link :to="item.url"
-                            class="text-white text-lg hover:text-primary transition-all duration-300 sm:text-[11px] md:text-[13px] lg:text-md xl:text-lg">
+                            class="text-white text-2xl leading-10 sm:leading-none hover:text-primary transition-all duration-300 sm:text-[11px] md:text-[13px] lg:text-md xl:text-lg">
                             {{ item.name }}
                         </nuxt-link>
                         <div class="absolute -right-4 h-8 w-1 top-0 bg-primary sm:-bottom-4 sm:w-full sm:h-1 sm:top-auto sm:right-auto sm:left-0"
@@ -44,7 +44,6 @@ const toggleMenu = () => {
                         </div>
                     </li>
                 </ul>
-
             </div>
         </div>
     </header>

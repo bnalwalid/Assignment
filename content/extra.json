@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Content",
+        "description": "Creates content that enables businesses to engage with their customers daily."
+    },
+    {
+        "id": 2,
+        "name": "SEO",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eu ultricies ultricies, nunc nisl ultricies nunc."
+    },
+    {
+        "id": 3,
+        "name": "Technology",
+        "description": "Donec auctor, nisl eu ultricies ultricies, nunc nisl ultricies nunc, quis aliquam nisl nunc eu nisi."
+    }
+]
